@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Appointment Management System</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="text">
+		<h1>Welcome to Appointment Management System</h1>
+	</div>
+	<div class="banner">
+		<div class="selector">
+			<div id="selectfield">
+				<p id="selecttext">Select your department</p>
+				<img src="arrow.png" id="icon">
+			</div>
+			<ul id="list" class="hide">
+				<li class="options">
+					<img src="hospital.png">
+					<a href="../Hospital home page/HHP.html">Hospital</a>
+				</li>
+				<li class="options">
+					<img src="university.png">
+					<a href="../University home page/UHP.html">University</a>
+				</li>
+				<li class="options">
+					<img src="embassy.png">
+					<a href="../Embasssy home page/EHP.html">Embassy</a>
+				</li>
+				<li class="options">
+					<img src="govt.png">
+					<a href="../Govt service home page/GSHP.html">Government</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+
+		var selectfield = document.getElementById("selectfield");
+		var list = document.getElementById("list");
+
+		selectfield.onclick = function(){
+			list.classList.toggle("hide");
+		}
+
+	</script>
+</body>
+</html>
